@@ -1,0 +1,150 @@
+/* 
+## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%) 
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 400, 500, 700
+
+*/
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110rem;
+  margin: auto;
+}
+.proof {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.proof-header {
+  display: flex;
+  justify-content: space-between;
+}
+.proof-intro {
+  width: 40rem;
+  margin-bottom: 5rem;
+}
+.proof-heading {
+  letter-spacing: -1px;
+  text-align: start;
+  font-size: 5rem;
+  line-height: 0.8;
+  margin-bottom: 3rem;
+}
+.proof-heading,
+.rating-statement {
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+.proof-description {
+  width: 35rem;
+  line-height: 1.5;
+}
+.proof-rates {
+  width: 45rem;
+  padding-top: 2rem;
+}
+.proof-rate {
+  width: 38rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 2.5rem;
+  background: var(--Light-Grayish-Magenta);
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+.proof-rate:last-child {
+  margin-bottom: 0;
+}
+.proof-rate--2 {
+  margin-left: 3.5rem;
+}
+.proof-rate--3 {
+  margin-left: 7rem;
+}
+.proof-testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.proof-testimonial {
+  background: var(--Very-Dark-Magenta);
+  padding: 2rem;
+  border-radius: 5px;
+  height: 22rem;
+}
+.testimonial-pic {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.testimonial-owner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.testimonial-tag {
+  color: var(--Soft-Pink);
+}
+.testimonial-name {
+  color: var(--White);
+  font-weight: 500;
+}
+.testimonial-comment {
+  color: var(--White);
+  line-height: 1.5;
+}
+.proof-testimonial--2 {
+  margin-top: 1rem;
+}
+.proof-testimonial--3 {
+  margin-top: 2rem;
+}
