@@ -46,13 +46,10 @@ body {
   line-height: 1;
   font-family: "League Spartan", sans-serif;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 110rem;
-  margin: auto;
 }
 .proof {
+  margin: 8rem auto;
+  max-width: 110rem;
   display: flex;
   flex-direction: column;
   padding: 3rem;
